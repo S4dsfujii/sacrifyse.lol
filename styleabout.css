@@ -1,0 +1,572 @@
+body {
+margin: 0;
+  padding: 0;
+  background-color: #050505;
+  
+  background-image: 
+    radial-gradient(circle at center, rgba(0, 0, 0, 0.164) 0%, rgba(0, 0, 0, 0.616) 75%),
+    url('bg.png'); 
+  background-position: center center,center center;
+  background-size: cover, auto;
+  background-attachment: fixed;
+  animation: moveBackground 20s linear infinite;
+  background-repeat: repeat;
+  cursor: url('geass-removebg-preview-ezgif.com-resize.png'), auto !important;
+  
+
+}
+a, a , button, .social-icons i, .boxleft1, .boxleft2, .boxleft3{
+  cursor: url('geass-removebg-preview-ezgif.com-resize.png'), pointer !important;
+}
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -300px;
+  }
+}
+.side-image {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100vh; 
+  z-index: -1;  
+  pointer-events: none;
+}
+
+.side-image.left {
+  left: 0;
+}
+
+.side-image.right {
+  right: 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.dot-art-bg{position: absolute;
+  top: 10px;
+  left: 600px;
+  z-index: -1; 
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 18px;
+  color: #a0a0a0;
+  pointer-events: none;
+  position:fixed;
+}
+.container {
+  position: fixed;
+  top: 50%;
+  left: 54.5%;
+  transform: translate(-50%, -50%);
+  width: 300px; 
+  height: 400px; 
+  z-index: 1;
+}
+
+.window-card {
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -34%) scale(0.9); 
+  width: 500px;
+  height: 700px;
+  text-align: start;
+  border: 3px solid grey;
+  padding: 0;
+  padding-top: 0;
+}
+.boxbotleft {
+  background-color: white;
+  height: 300px;
+  width: 160px;
+  border: 3px solid grey;
+  position: absolute;
+  left: -90%; 
+  bottom: -38.5%;  
+  display: flex;
+  align-items: center;
+  font-family: 'UnifrakturMaguntia';
+  transform: translate(20%, -11%) scale(0.9); 
+  margin: auto;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.boxmidleft {
+  background-color: white;
+  height: 100px;
+  width: 160px;
+  border: 3px solid grey;
+  position: absolute;
+  left: -90%; 
+  bottom: 41%;  
+  display: flex;
+  align-items: center;
+  font-family: 'UnifrakturMaguntia';
+  transform: translate(20%, -11%) scale(0.9); 
+  margin: auto;
+  position: fixed;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.social-icons {
+  display:flex;
+  gap:12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-icons i {
+  color: #000000 !important; 
+  font-size: 24px;            
+  text-decoration: none;     
+  display: inline-block;
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 15px;
+}
+.social-icons a:hover i {
+  color: #888888;         
+}
+.social-icons a:hover i {
+  color: #505050 !important;   
+}
+.window-header {
+    background-color: #cccccc; 
+    border-bottom: 2px solid #777777; 
+    text-align: center;
+    padding: 4px 0;
+}
+.header-title {
+    display: block;                  
+    background-color: hsl(0, 0%, 0%);      
+    color: #000000;                  
+    text-align: center;              
+    padding: 4px 0;                  
+    border-bottom: 1px solid #3a3a3a;  
+    width: 100%;
+    font-family: 'UnifrakturMaguntia';
+}
+
+.window-card {
+    background-color: #ffffff;       
+    padding-top: 0;                  
+    overflow: hidden;                
+}
+.boxtopleft {
+  background-color: white;
+  height: 260px;
+  width: 160px;
+  border: 3px solid grey;
+  position: absolute;
+  left: -90%; 
+  bottom: 70%;  
+  display: flex;
+  align-items: flex-end;
+  font-family: 'UnifrakturMaguntia';
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translate(20%, 4%) scale(0.9); 
+}
+
+
+.navbar {
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  background-color: rgb(252, 252, 252);
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.navbar a {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 6px 0;
+  border-bottom: 1px solid #ccc;
+  font-family: "IM Fell English", serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar-box {
+  border: 2px solid #888;
+  border-radius: 0px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0;
+  width: 100%;
+}
+
+.boxleft {
+  font-family: "IM Fell English", serif;
+  font-size: 16px;
+  line-height: normal !important;
+  width: 100%;
+}
+
+.boxleft1:hover, .boxleft2:hover, .boxleft3:hover {
+  background-color: grey;
+}
+.sidebar-box {
+  border: 2px solid #888;
+  border-radius: 0px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0;
+  
+}
+
+.box-header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 4px 0;
+  margin: 0;
+  width: 158px;
+}
+.box-title{
+    background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 4px 0;
+  margin: 0;
+  width: 158px;
+}
+.Botleft-header{
+      background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 4px 0;
+  margin: 0;
+  width: 158px;
+}
+.bigcard{
+  text-align: center;
+  font-size: large;
+
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+.banner {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.text{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  -webkit-font-smoothing: none;
+  font-smooth: always;
+  text-align: left;
+  padding-top: 17px;
+  margin-top: -50px;
+}
+.boxmidbot{
+     border-radius: 4px;
+    overflow: hidden;
+
+   background-color: white;
+  box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 240px;
+  background-color: #fff;
+  text-align: start;
+ border: 3px solid grey;
+ padding: 0;
+  font-family: 'UnifrakturMaguntia';
+
+}
+.texttitle{
+  text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: solid;
+  font-size: 22px;
+  -webkit-font-smoothing: none;
+  font-smooth: always;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.boxleft{
+ font-family: "IM Fell English", serif;
+   font-size: 18px;
+  line-height: 355%;
+}
+.boxleft1:hover{
+  background-color: grey;
+}
+.boxleft2:hover{
+  background-color: grey;
+}
+.boxleft3:hover{
+  background-color: grey;
+}
+.section-box {
+  width: 450px;
+  border: 1px solid #5c5c5c;
+  background-color: #ffffff;
+  font-family: monospace;
+  box-sizing: border-box;
+ margin-top: 30px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  image-rendering: pixelated;
+  margin-left: -1px;
+  font-size: 15px;
+ 
+}
+
+.section-header {
+  background-color: #030303;
+  color: #050505;
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding: 3px 6px;
+  text-transform: uppercase;
+
+}
+
+.section-body {
+  padding: 20px 8px;
+}
+
+.bio-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-info p {
+  margin: 4px 0;
+  font-size: 12px;
+  color: #000000;
+  line-height: 1;
+  font-size: 15px
+}
+
+.label {
+  background-color: #020202;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 2px 4px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.bio-grid {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+ 
+}
+
+
+.bio-graphic-img {
+
+  width: 80px;    
+  height: auto;
+  display: block;
+}
+.bio-graphic1 {
+  position: absolute;
+  top: 35px;          
+  right: 15px;        
+  z-index: 2;
+}
+
+.bio-graphic-img {
+  width: 80px;       
+  height: auto;
+  display: block;
+}
+.banner2 {
+  width: 90%;                   
+  max-width: 444px;            
+  margin: 35px auto auto;   
+  display: block;              
+  border: 1px solid #000000;  
+  box-sizing: border-box;      
+}
+.dot-art-overlay {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-110%, -40%) scale(1); 
+  width: 500px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+  filter: invert(1) brightness(0.5);
+  opacity: 0.85;
+  
+}
+.nav-image {
+  width: 100%;
+  height: auto;
+  max-height: 100px; 
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  margin-top: 20px
+}
+:root {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+.cursor-vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; 
+  z-index: 9999;
+  
+  background: radial-gradient(
+    circle 600px at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+.listening-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 30px);
+  padding: 12px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.song-info {
+  text-align: center;
+  font-family: 'IM Fell English', serif;
+  color: #000;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.song-title {
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.player-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.player-controls button {
+  background: #000;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 6px 10px;
+  cursor: url('geass-removebg-preview-ezgif.com-resize.png'), pointer !important;
+  font-size: 12px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.player-controls button:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+.song-icon {
+  width: 120px;       /* Increased from 80px */
+  height: 120px;      /* Increased from 80px */
+  object-fit: cover;
+  border: 2px solid #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  image-rendering: pixelated;
+}
+
+.listening-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 30px);
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 18px;          /* Adjusted spacing between elements */
+}
+/* --- CHAIN OVERLAYS --- */
+.boxtopleft {
+  overflow: visible !important;
+}
+
+.boxtopleft::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 16px;
+  height: 692px;
+  background-image: url('chain.gif');
+  background-repeat: repeat-y;
+  background-position: center top;
+  z-index: 999;
+  pointer-events: none;
+  filter: brightness(2.5) contrast(1.6);
+}
+
+.window-card {
+  overflow: visible !important;
+}
+
+.window-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 16px;
+  height: 692px;
+  background-image: url('chain.gif');
+  background-repeat: repeat-y;
+  background-position: center top;
+  z-index: 999;
+  pointer-events: none;
+  filter: brightness(2.5) contrast(1.6);
+}
